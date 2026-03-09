@@ -1,0 +1,50 @@
+@import "variables";
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.Proyectos {
+  padding: 4rem 2rem;
+  background-color: #020617;
+}
+
+.timeline {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &-item {
+    background-color: @card-color;
+    border-left: 4px solid @primary;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &-content {
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h4 {
+      font-size: 0.9rem;
+      color: @primary;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      color: @muted-text;
+      margin-bottom: 1rem;
+    }
+  }
+}
